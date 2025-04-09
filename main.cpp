@@ -317,8 +317,8 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char **argv) {
     }
   }
 
-  std::cout << "(Read->Pipe->Write Different Channel): "
-            << elapseTime / 1E9 * 1E3 << " ms" << std::endl;
+  std::cout << "Sum is correct." << std::endl;
+  std::cout << elapseTime / 1E9 * 1E3 << " ms" << std::endl;
   std::cout << "Streaming BW: "
             << sizeof(Element) * (STRM_LEN / 1E9) / (elapseTime / 1E9)
             << " GB/sec" << std::endl;
